@@ -23,6 +23,8 @@ public class DepthFirstSearch {
 		}else{
 			marked.add(start);
 			for (Node neighbor : graph.getNodeNeighbors(start)){
+				//recursive implementation of DFS
+				//non-recursive using stack
 				if(dfs(elementToFind, neighbor))
 				return true;
 			}
